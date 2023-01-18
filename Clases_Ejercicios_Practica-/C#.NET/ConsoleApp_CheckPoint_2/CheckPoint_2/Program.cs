@@ -266,7 +266,7 @@ namespace CheckPoint_2
 
                     //esta bien, la cosa es que en c# hay algo que se llama linq. 
                     //https://www.tutorialspoint.com/how-to-check-in-chash-whether-the-string-array-contains-a-particular-work-in-a-string-array
-                    //
+                    
 
                     int[] edades = { 20, 15, 10, 12, 28, 35, 48, 7, 5, 6, 10, 11 };
                     Console.WriteLine("\nIngresa el valor a ser buscado:");
@@ -275,13 +275,12 @@ namespace CheckPoint_2
 
                     for (int i = 0; i < edades.Length; i++)
 
-                        if (num_buscar == edades[i])
-                            Console.WriteLine("El número ingresado (" + num_buscar + ") fue encontrado en la posicion " + i);
-                        else
-                        {
-                            Console.WriteLine(" \n-1  \nnúmero no se encuentra en el Array");
-                            break;
-                        }
+                    if (num_buscar == edades[i])  //1ra 
+                    //if (edades.Contains(num_buscar)) // usando lo del link pero no logro con esta sacar la posicion 
+                        Console.WriteLine("\nEN POSICION " + i + ": EL NÚMERO INGRESADO (" + num_buscar + ") FUE ENCONTADO !!" );
+                    else
+                        Console.WriteLine("\nEn Posicion " + i + ": El número ingresado no se encuentra, -1" );
+
 
 
 
@@ -386,12 +385,14 @@ namespace CheckPoint_2
 
                     //existe en linq el .SUM
 
-                    int suma = 0;
+                    
                     int[] arrayPromedio = { 10, 18, 22, 65, 8, 0, 126, 8, 996, 7, 2, 5, 23, 75, 44, 29, 24 };
-                    for (int a = 0; a < arrayPromedio.Length; a++)
-                    {
-                        suma += arrayPromedio[a];
-                    }
+                    int suma = arrayPromedio.Sum(); // Corrijo con .Sum()
+
+                    //for (int a = 0; a < arrayPromedio.Length; a++)
+                    // {
+                    //   suma += arrayPromedio[a];
+                    //}
                     Console.WriteLine("La suma total es: " + suma);
                     Console.WriteLine("El promedio es: " + suma / arrayPromedio.Length);
 
@@ -414,7 +415,7 @@ namespace CheckPoint_2
                                       "\r\nImprimir en pantalla el contenido del array por cada una de sus posiciones");
 
 
-                    int[] array2 = new int[10]; //kah
+                    int[] array2 = new int[10]; //kah  // Asi estan en EDU IT, se inicializa y se declara el tamaño del Array, solo que lo hice en un solo renglon 
                     Console.WriteLine("\n\nIngrese valor agregar al Array");
                     ;
                     for (int i = 0; i < 10; i++)
