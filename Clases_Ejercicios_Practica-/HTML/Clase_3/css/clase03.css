@@ -1,0 +1,22 @@
+body{
+    
+    margin: auto;
+    width: 960px;
+
+}
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: chartreuse;
+}
+
+main {
+    height: 500px;
+}
+
+footer {
+    height: 150px;
+    background-color: coral;
+}

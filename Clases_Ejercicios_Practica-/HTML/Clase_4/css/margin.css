@@ -1,0 +1,39 @@
+#Amarrilo {
+    width: 200px;
+    height: 100px;
+    background-color: gold;
+    margin: auto;
+
+}
+
+#Azul {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    margin-right: 50px;
+    margin-left: 50px;
+    
+}
+
+#Rojo {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(252, 0, 50);
+}
+p {
+ text-decoration: overline;
+ text-align: justify;
+ width: 50%;
+ height: 50px;
+}
+ header{ 
+    width: 100%;
+    background-color: azure;
+    
+   
+ }
+ h1{
+   
+    color: blueviolet;
+    padding-left: 40% ;
+ }
