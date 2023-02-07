@@ -1,0 +1,37 @@
+#Contenedor1{
+    width: 980px;
+    height: 450px;
+    margin: auto;
+    background-color: #ccc;
+    display: flex;
+    /*distribuye en eje x */
+    /* justify-content: center; centra elcontenido de la cja */
+    /* justify-content: end; manda el contenido al lado izq de la caja */
+     justify-content: space-between; /* manda todo el espacio restante entre el contenido de la caja */
+    /*justify-content: space-around; reparte el espacio sobrante a ambos lados de igual manera */
+}
+#Contenedor1 article{
+    width: 150px;
+    height: 120px;
+    background-color: aquamarine;
+
+}
+
+#Contenedor2{
+    width: 850px;
+    height: 450px;
+    background-color: #ccc;
+    margin: auto;
+    display: flex;
+    /*distribuje en eje y */ 
+    /* align-items: end; manda el contenido a la parte de abajo del contenedor */
+    align-items: center; /* centra en el eje y */
+     
+
+}
+#Contenedor2 article{
+    width: 150px;
+    height: 120px;
+    background-color: aquamarine;
+
+}  

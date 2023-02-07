@@ -19,6 +19,7 @@
     width: 200px;
     height: 100px;
     background-color: rgb(252, 0, 50);
+    margin-bottom: 50px;
 }
 p {
  text-decoration: overline;
